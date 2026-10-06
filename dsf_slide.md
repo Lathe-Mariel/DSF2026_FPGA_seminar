@@ -1110,7 +1110,7 @@ end
 
 ---
 
-<style scoped>section { font-size: 24px; }</style>
+<style scoped>section { font-size: 21px; }</style>
 
 ## ソフトウェアの対策: デバウンス回路
 
