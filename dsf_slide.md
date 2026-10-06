@@ -1116,6 +1116,7 @@ end
 
 - さっきの回路は 37 ns ごとにスイッチを見ているので、チャタリングに非常に敏感
 - チャタリングが収まるくらいの間隔で見るようにすると、対策になる。プロジェクト: [`project/sw_fixed`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/tree/main/project/sw_fixed)
+- 外付けのスイッチで試すとき: pin 86 と GND の間にタクトスイッチをつなぐ。対策なしは [`project/sw_ext_base`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/tree/main/project/sw_ext_base)、対策ありは [`project/sw_ext_fixed`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/tree/main/project/sw_ext_fixed)
 
 ```sv
 localparam CLK_FREQ = 27_000_000;

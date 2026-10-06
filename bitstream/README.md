@@ -13,6 +13,8 @@
 | `sw_button_reverse.fs` | `project/sw_button/answer/top_reverse.sv` | 2-3 の演習の正解例。LED が右に移動する |
 | `sw_button_release.fs` | `project/sw_button/answer/top_release.sv` | 2-3 の演習の正解例。ボタンを離したときに移動する |
 | `sw_fixed.fs` | `project/sw_fixed` | `sw_button` にデバウンス回路を入れたもの |
+| `sw_ext_base.fs` | `project/sw_ext_base` | 外付けスイッチ（pin 86）。チャタリング対策なし |
+| `sw_ext_fixed.fs` | `project/sw_ext_fixed` | 外付けスイッチ（pin 86）。チャタリング対策あり |
 | `stopwatch.fs` | `project/stopwatch` | ストップウォッチ |
 | `stopwatch_stopped.fs` | `project/stopwatch` に `project/sim/answer/top.sv` を適用したもの | STOPPED 状態を追加する応用の正解例 |
 | `gao_stopwatch.fs` | `project/gao_stopwatch` | ストップウォッチに GAO コアを入れたもの。GAO ウィンドウから書き込む |
