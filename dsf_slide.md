@@ -411,13 +411,13 @@ create_clock -name clk -period 37.037 -waveform {0 18.518} [get_ports {clk}] -ad
 
 ---
 
-<style scoped>section { font-size: 25px; }</style>
+<style scoped>section { font-size: 22px; }</style>
 
 ## デザイン作成13：物理制約ファイルの編集
 
 - ファイル名を`top.cst` とし、下記を記述する
 
-![h:270 center](img/ch4/list_2.png)
+![h:330 center](img/ch4/fig_cst_ports.drawio.svg)
 
 - 記述した内容は下記の通り
   - IO_LOC: top モジュールの各入出力をFPGA のどの番号のピンに接続するか
