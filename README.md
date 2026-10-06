@@ -6,6 +6,7 @@ CQ出版＆DSF コラボ企画「低価格FPGAボードで体験するFPGA開発
 | ファイル・フォルダ | 内容 |
 |---|---|
 | `dsf_slide.md` | スライド（Marp）。DSF 用のスライドはこのファイルを正とする |
+| `dsf_slide.pdf` | スライドの PDF |
 | `img/` | スライドの図表。`*.drawio.svg` は draw.io で編集できる。`img/wk/` は図の元にしたスクリーンショット |
 | `project/` | ハンズオンで使う Gowin EDA のプロジェクトと，シミュレーション用のファイル。[project/README.md](project/README.md) を参照 |
 | `screenshot_list.md` | スライドに入れるスクリーンショットの一覧と，確認が必要な点 |
