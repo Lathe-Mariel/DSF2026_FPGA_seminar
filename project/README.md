@@ -7,7 +7,7 @@ DSF2026 のハンズオンで使うプロジェクトとファイル。
 |---|---|---|
 | `blink` | L チカ | 2-1 Gowin EDA の使い方，2-2 タイミングレポート |
 | `sta_demo` | 段数を変えてタイミング違反を起こすデザイン。`report/` に 2 段と 12 段のレポートの例 | 2-2 STA の演習 |
-| `sw_button` | ボタンで LED をシフトする回路。チャタリング対策なし | 2-3 スイッチ入力 |
+| `sw_button` | ボタンで LED をシフトする回路。チャタリング対策なし。`answer/` は演習の答え（向きを逆にする，離したときに動かす） | 2-3 スイッチ入力 |
 | `sw_fixed` | `sw_button` にチャタリング対策を入れたもの | 2-3 の説明 |
 | `stopwatch` | ストップウォッチ | 2-4 |
 | `gao_stopwatch` | `stopwatch` に GAO の設定 `src/stopwatch.rao` を追加したもの。GAO ウィンドウから接続できない場合は，Zadig で WinUSB ドライバを入れ，GAO のケーブルに Gowin USB Cable(WINUSB) を選ぶとつながることがある | 3-1 GAO の紹介 |

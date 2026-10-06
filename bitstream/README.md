@@ -10,6 +10,8 @@
 | `sta_demo_stages2.fs` | `project/sta_demo` | `STAGES = 2`。タイミングを満たす |
 | `sta_demo_stages12.fs` | `project/sta_demo` の `STAGES` を 12 にしたもの | タイミング違反あり。演習の結果の例 |
 | `sw_button.fs` | `project/sw_button` | ボタン S2 を押すと LED が 1 つ移動する |
+| `sw_button_reverse.fs` | `project/sw_button/answer/top_reverse.sv` | 2-3 の演習の正解例。LED が右に移動する |
+| `sw_button_release.fs` | `project/sw_button/answer/top_release.sv` | 2-3 の演習の正解例。ボタンを離したときに移動する |
 | `sw_fixed.fs` | `project/sw_fixed` | `sw_button` にデバウンス回路を入れたもの |
 | `stopwatch.fs` | `project/stopwatch` | ストップウォッチ |
 | `stopwatch_stopped.fs` | `project/stopwatch` に `project/sim/answer/top.sv` を適用したもの | STOPPED 状態を追加する応用の正解例 |

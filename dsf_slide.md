@@ -1085,6 +1085,8 @@ end
   - ヒント: `<<` を `>>` に変える。端まで行ったときに戻る位置も変える
 - 時間がある人: 押したときではなく、離したときに移動するようにする
   - ヒント: 「前が 1 で今が 0」を検出する
+- 答えの例: [`project/sw_button/answer/top_reverse.sv`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/blob/main/project/sw_button/answer/top_reverse.sv)、[`project/sw_button/answer/top_release.sv`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/blob/main/project/sw_button/answer/top_release.sv)
+  - `src/top.sv` を答えのファイルの内容に置き換えて、ビットストリームを生成する
 
 ---
 
