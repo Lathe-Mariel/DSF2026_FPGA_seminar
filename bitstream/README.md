@@ -17,6 +17,7 @@
 | `sw_ext_fixed.fs` | `project/sw_ext_fixed` | 外付けスイッチ（pin 86）。チャタリング対策あり |
 | `stopwatch.fs` | `project/stopwatch` | ストップウォッチ |
 | `stopwatch_stopped.fs` | `project/stopwatch` に `project/sim/answer/top.sv` を適用したもの | STOPPED 状態を追加する応用の正解例 |
+| `gao_sw_ext.fs` | `project/gao_sw_ext` | 外付けスイッチの回路に GAO コアを入れたもの。チャタリングの観測用。GAO ウィンドウから書き込む |
 | `gao_stopwatch.fs` | `project/gao_stopwatch` | ストップウォッチに GAO コアを入れたもの。GAO ウィンドウから書き込む |
 
 ## 書き込み方

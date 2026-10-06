@@ -13,11 +13,12 @@ DSF2026 のハンズオンで使うプロジェクトとファイル。
 | `sw_ext_fixed` | `sw_fixed` のスイッチを外付け（pin 86，`LVCMOS18`）にしたもの。チャタリング対策あり | 同上 |
 | `stopwatch` | ストップウォッチ | 2-4 |
 | `gao_stopwatch` | `stopwatch` に GAO の設定 `src/stopwatch.rao` を追加したもの。GAO ウィンドウから接続できない場合は，Zadig で WinUSB ドライバを入れ，GAO のケーブルに Gowin USB Cable(WINUSB) を選ぶとつながることがある | 3-1 GAO の紹介 |
+| `gao_sw_ext` | `sw_ext_base` に GAO の設定 `src/sw_ext.rao` を追加したもの。`sw_in` の立ち下がりをトリガに，外付けスイッチのチャタリングを見る | 3-2 GAO の紹介 |
 | `sim` | ストップウォッチのテストベンチ（`tb_top.sv`）と実行スクリプト。`tb_top_stopped.sv` と `answer/top.sv` は STOPPED 状態を追加する演習の答え合わせ用 | 3-1 シミュレーション |
 
 ## 確認した環境
 
-- Gowin EDA V1.9.11.03 Education（Linux 版の `gw_sh`）で，8 つのプロジェクトのビットストリーム生成まで確認
+- Gowin EDA V1.9.11.03 Education（Linux 版の `gw_sh`）で，9 つのプロジェクトのビットストリーム生成まで確認
 - `sim` は Icarus Verilog 12.0 で確認。`run.bat` は Windows では未確認
 - `sw_button` は Tang Nano 9K の実機で動作を確認。ボタン S2 を押すたびに LED が 1 つ移動し，チャタリングは起きなかった
 - ほかのプロジェクトの実機での動作は未確認

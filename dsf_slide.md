@@ -1598,6 +1598,7 @@ end
 | トリガ位置 | 16 | トリガの少し前から記録する |
 
 - 制約ファイルには、JTAG のクロック TCK の定義と、`clk` とは非同期であるという指定を足してある
+- 外付けスイッチのチャタリングを GAO で見る版: [`project/gao_sw_ext/gao_sw_ext.gprj`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/blob/main/project/gao_sw_ext/gao_sw_ext.gprj)。`sw_in` の立ち下がりをトリガにして、約 0.6 ms 分を記録する
 
 ---
 
