@@ -1,0 +1,18 @@
+[dumpfile] "wave.vcd"
+[timestart] 0
+[size] 1400 600
+[pos] -1 -1
+*-35.000000 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[sst_width] 200
+[signals_width] 220
+[sst_expanded] 1
+@28
+tb_top.sw_in
+tb_top.dut.sw_posedge
+tb_top.dut.state
+tb_top.dut.sec_tick
+@22
+tb_top.dut.count[5:0]
+tb_top.led_output[5:0]
+[pattern_trace] 1
+[pattern_trace] 0
