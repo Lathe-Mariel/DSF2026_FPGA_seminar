@@ -1672,3 +1672,22 @@ end
 - 正しく動くかは，シミュレーションと GAO で確かめる
 
 ---
+
+---
+
+<style scoped>section { font-size: 23px; }</style>
+
+## もっと学ぶには: GOWIN FPGA 小冊子 vol.2
+
+![bg right:30% w:300](img/ref/fpga_vol2_cover.png)
+
+- Interface 2022 年 12 月号 別冊付録「**2500 円ボードで始める FPGA 開発**」（CQ出版社）
+  - 今日と同じ **Tang Nano 9K** を題材にした小冊子
+- 内容
+  - 基礎編: ボードの紹介，開発環境の構築，L チカ，LED マトリクスの制御
+  - 応用編: I2C の温度センサ，ステッピングモータ，DVI 出力，RISC-V ソフトコア
+  - Python 編: 高位合成ツール Polyphony による HDL の生成
+- 小冊子のページ: https://fpga.tokyo/vol2/
+  - バックナンバーの PDF を購入できる
+- 記事のサポートページ: https://interface.cqpub.co.jp/fpga02/
+- Interface 2022 年 12 月号: https://interface.cqpub.co.jp/magazine/202212/
