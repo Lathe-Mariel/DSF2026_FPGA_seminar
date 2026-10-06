@@ -29,6 +29,8 @@ CQ出版＆DSF コラボ企画　DSF2026 ハンズオン（2026年10月6日）
 鈴木 量三朗（有限会社シンビー）
 </div>
 
+<div style="font-size:70%"><a href="https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar">https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar</a></div>
+
 ---
 
 <style scoped>section { font-size: 24px; } td:first-child { white-space: nowrap; }</style>
@@ -52,10 +54,28 @@ CQ出版＆DSF コラボ企画　DSF2026 ハンズオン（2026年10月6日）
 
 - PC に Gowin EDA **V1.9.11.03 Education** をインストールしておく
 - 使うもの: Tang Nano 9K，USB ケーブル
-- プロジェクトファイル一式: このスライドと同じフォルダの `project` フォルダ
-  - スライド中のパスは，スライドのあるフォルダからの相対パス
+- 資料とプロジェクトファイルは GitHub のリポジトリにある
+  - https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar
+  - スライド中のパスは，リポジトリの先頭からの相対パス
 
-<div class="ss">要記入: プロジェクトファイルの配布方法</div>
+---
+
+<style scoped>section { font-size: 24px; }</style>
+
+## リポジトリを手元に持ってくる
+
+- **git を使う場合**: コマンドラインシェルで次を実行する
+
+```
+> git clone https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar.git
+```
+
+- **zip でダウンロードする場合**
+  1. ブラウザで https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar を開く
+  2. 緑色の **Code** ボタンを押し，**Download ZIP** を選ぶ
+  3. ダウンロードした zip を展開する。フォルダ名は `DSF2026_FPGA_seminar-main` になる
+- 展開したフォルダの `project` の下に，各プロジェクトがある
+- Gowin EDA でプロジェクトを開くときは，各フォルダの `.gprj` ファイルを選ぶ
 
 ---
 
@@ -340,7 +360,7 @@ endmodule
 
 ![h:400 center](img/ch4/fig_blink_code.drawio.svg)
 
-- 同じコードが `project/blink/src/top.sv` にある。内容はあとで説明する
+- 同じコードが [`project/blink/src/top.sv`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/blob/main/project/blink/src/top.sv) にある。内容はあとで説明する
 
 ---
 
@@ -402,7 +422,7 @@ create_clock -name clk -period 37.037 -waveform {0 18.518} [get_ports {clk}] -ad
 - 記述した内容は下記の通り
   - IO_LOC: top モジュールの各入出力をFPGA のどの番号のピンに接続するか
   - IO_PORT: 各入出力の設定。LED をつないだピンの電源は 1.8 V なので，`IO_TYPE` は `LVCMOS18` にする
-- 同じ内容が `project/blink/src/top.cst` にある
+- 同じ内容が [`project/blink/src/top.cst`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/blob/main/project/blink/src/top.cst) にある
 
 ---
 
@@ -474,7 +494,7 @@ create_clock -name clk -period 37.037 -waveform {0 18.518} [get_ports {clk}] -ad
 - Windows では、ビルド済みのファイルを取得する。インストールは展開するだけ
   1. https://github.com/ciniml/debug-tools-builder/releases を開く
   2. v1.3 の `openFPGALoader-win.zip` をダウンロードして、好きな場所に展開する
-  3. コマンドプロンプトで、展開した `openFPGALoader\bin` フォルダに移動する
+  3. コマンドラインシェルで、展開した `openFPGALoader\bin` フォルダに移動する
 
 ```
 > cd openFPGALoader\bin
@@ -856,7 +876,7 @@ counter[22]:  0101...0101...0101...0101...  ← さらに半分
 
 ## 演習用デザイン: sta_demo
 
-- プロジェクト: `project/sta_demo/sta_demo.gprj`
+- プロジェクト: [`project/sta_demo/sta_demo.gprj`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/blob/main/project/sta_demo/sta_demo.gprj)
 - `STAGES` 段の 32 ビット演算を **1 クロックの間に** 続けて行う
 
 ```sv
@@ -989,7 +1009,7 @@ always_ff @ (posedge clk) result <= x[STAGES]; // 終点の FF（FF2）
 
 ## ボタンで LED をシフトする回路
 
-1. プロジェクト `project/sw_button` を Gowin EDA で開く
+1. プロジェクト [`project/sw_button`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/tree/main/project/sw_button) を Gowin EDA で開く
 2. ビットストリームを生成して書き込む
 3. ボード上のボタン S2 を押す。押すたびに、点灯している LED が 1 つずつ移動する
 
@@ -1093,7 +1113,7 @@ end
 ## ソフトウェアの対策: デバウンス回路
 
 - さっきの回路は 37 ns ごとにスイッチを見ているので、チャタリングに非常に敏感
-- チャタリングが収まるくらいの間隔で見るようにすると、対策になる。プロジェクト: `project/sw_fixed`
+- チャタリングが収まるくらいの間隔で見るようにすると、対策になる。プロジェクト: [`project/sw_fixed`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/tree/main/project/sw_fixed)
 
 ```sv
 localparam CLK_FREQ = 27_000_000;
@@ -1152,7 +1172,7 @@ end
 
 ## ストップウォッチを動かす
 
-1. プロジェクト `project/stopwatch` を Gowin EDA で開く
+1. プロジェクト [`project/stopwatch`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/tree/main/project/stopwatch) を Gowin EDA で開く
 2. ビットストリームを生成して書き込む
 3. 2-3 と同じボタン S2 を何回か押して、動作を確認する
 
@@ -1423,7 +1443,7 @@ typedef enum logic [1:0] {  // logic を logic [1:0] に変える
   - **GTKWave**: 波形ビューア
 - Windows 用の Icarus Verilog のインストーラ https://bleyer.org/icarus/ には GTKWave も含まれている
   - インストール時に「PATH に追加する」オプションを選ぶ
-- 使うファイル: `project/sim/`
+- 使うファイル: [`project/sim/`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/tree/main/project/sim/)
 
 | ファイル | 内容 |
 |---|---|
@@ -1537,14 +1557,14 @@ end
 ## 演習: STOPPED 状態の答え合わせ
 
 - 2-4 の応用「STOPPED 状態を追加する」を実装したら、テストベンチで確かめる
-  - `project/sim/tb_top_stopped.sv` は、ボタンを押すたびに IDLE → BUSY → STOPPED → IDLE と移ることを確かめる
+  - [`project/sim/tb_top_stopped.sv`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/blob/main/project/sim/tb_top_stopped.sv) は、ボタンを押すたびに IDLE → BUSY → STOPPED → IDLE と移ることを確かめる
 
 ```
 > run_stopped.bat            （Linux と Mac では ./run_stopped.sh）
 ```
 
 - `STOPPED` を追加する前に実行すると、FAIL になる
-- 答えは `project/sim/answer/top.sv`。`run_stopped.bat answer` で答えを検証できる
+- 答えは [`project/sim/answer/top.sv`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/blob/main/project/sim/answer/top.sv)。`run_stopped.bat answer` で答えを検証できる
 - LED を目で見て判断する代わりに、テストベンチが**自動で判定**する
 
 ---
@@ -1563,7 +1583,7 @@ end
 
 ## GAO 用のプロジェクト
 
-- `project/gao_stopwatch/gao_stopwatch.gprj`
+- [`project/gao_stopwatch/gao_stopwatch.gprj`](https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar/blob/main/project/gao_stopwatch/gao_stopwatch.gprj)
   - 2-4 のストップウォッチに、GAO の設定ファイル `src/stopwatch.rao` を追加したもの
 
 | 設定 | 値 | 意味 |
