@@ -30,6 +30,7 @@ CQ出版＆DSF コラボ企画　DSF2026 ハンズオン（2026年10月6日）
 </div>
 
 <div style="font-size:70%"><a href="https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar">https://github.com/Lathe-Mariel/DSF2026_FPGA_seminar</a></div>
+<div style="font-size:60%; color:#52606d">CC BY 4.0 ／ 元の教材: 井田 健太，望月 英輔，鈴木 量三朗（CQ出版 FPGA セミナー教材）</div>
 
 ---
 
@@ -1678,6 +1679,25 @@ end
 ---
 
 ---
+<style scoped>section { font-size: 22px; } td:first-child { white-space: nowrap; }</style>
+
+## ライセンスとクレジット
+
+- この資料は **CC BY 4.0**（クリエイティブ・コモンズ 表示 4.0 国際）で公開している
+  - https://creativecommons.org/licenses/by/4.0/deed.ja
+- CQ出版の FPGA セミナー用に作成された教材（CC BY 4.0）をもとに，DSF2026 向けに構成と内容を改変したもの
+
+| 著者 | 元の教材での担当 |
+|---|---|
+| 井田 健太 | FPGA の仕組み，Tang Nano 9K，静的タイミング解析，シミュレーション，GAO |
+| 望月 英輔 | Gowin EDA の使い方と L チカ，スイッチ入力とデバウンス |
+| 鈴木 量三朗 | always_comb の解説，ストップウォッチ |
+
+- DSF2026 向けの改変と追加は井田 健太による
+- 利用・改変するときは，著者名とリポジトリへのリンク，CC BY 4.0 であることを表示し，改変した場合はその旨を示す
+
+---
+
 
 <style scoped>section { font-size: 23px; }</style>
 
